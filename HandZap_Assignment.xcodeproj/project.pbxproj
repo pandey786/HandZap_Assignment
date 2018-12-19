@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DA4E2669FBA23E135C6153F /* Pods_HandZap_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07098FB0AEB81E1E33CD6BA0 /* Pods_HandZap_AssignmentTests.framework */; };
+		5118681121CA033400CACE19 /* HandZap_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118681021CA033400CACE19 /* HandZap_AssignmentTests.swift */; };
+		5118681C21CA033400CACE19 /* HandZap_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118681B21CA033400CACE19 /* HandZap_AssignmentUITests.swift */; };
+		5118683221CA036500CACE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118682B21CA036500CACE19 /* AppDelegate.swift */; };
+		5118683321CA036500CACE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5118682D21CA036500CACE19 /* Assets.xcassets */; };
+		5118683421CA036500CACE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5118682E21CA036500CACE19 /* LaunchScreen.storyboard */; };
+		5118685321CA055100CACE19 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118685121CA055100CACE19 /* RootRouter.swift */; };
+		5118685421CA055100CACE19 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118685221CA055100CACE19 /* RootContract.swift */; };
+		5118686B21CA05D500CACE19 /* NewPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118686121CA05D500CACE19 /* NewPostInteractor.swift */; };
+		5118686C21CA05D500CACE19 /* NewPostContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118686321CA05D500CACE19 /* NewPostContractor.swift */; };
+		5118686D21CA05D500CACE19 /* NewPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118686521CA05D500CACE19 /* NewPostPresenter.swift */; };
+		5118686E21CA05D500CACE19 /* NewPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118686721CA05D500CACE19 /* NewPostRouter.swift */; };
+		5118686F21CA05D500CACE19 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118686921CA05D500CACE19 /* NewPostViewController.swift */; };
+		5118687021CA05D500CACE19 /* NewPostStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5118686A21CA05D500CACE19 /* NewPostStoryboard.storyboard */; };
+		5118687421CA06B800CACE19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118687221CA06B800CACE19 /* Constants.swift */; };
+		5118688421CA105300CACE19 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118688121CA105300CACE19 /* CustomTextField.swift */; };
+		5118688521CA105300CACE19 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5118688221CA105300CACE19 /* CustomTextField.xib */; };
+		5118688821CA107D00CACE19 /* CustomTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5118688621CA107D00CACE19 /* CustomTextView.xib */; };
+		5118688921CA107D00CACE19 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118688721CA107D00CACE19 /* CustomTextView.swift */; };
+		5118688D21CA219100CACE19 /* CustomDataPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5118688B21CA219100CACE19 /* CustomDataPicker.xib */; };
+		5118688E21CA219100CACE19 /* CustomDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118688C21CA219100CACE19 /* CustomDataPicker.swift */; };
+		5118689021CA4CB400CACE19 /* AddAttachmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118688F21CA4CB400CACE19 /* AddAttachmentCell.swift */; };
+		5118689221CA4CC000CACE19 /* AttachmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118689121CA4CC000CACE19 /* AttachmentCell.swift */; };
+		5118689621CA519500CACE19 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118689521CA519500CACE19 /* UserData.swift */; };
+		511868A521CA5D0000CACE19 /* PostCategoriesContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118689921CA5D0000CACE19 /* PostCategoriesContractor.swift */; };
+		511868A621CA5D0000CACE19 /* PostCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118689B21CA5D0000CACE19 /* PostCategoriesPresenter.swift */; };
+		511868AB21CA5D0000CACE19 /* PostCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511868A221CA5D0000CACE19 /* PostCategoriesInteractor.swift */; };
+		511868AC21CA5D0000CACE19 /* PostCategoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511868A421CA5D0000CACE19 /* PostCategoriesRouter.swift */; };
+		511868AE21CA5D6000CACE19 /* PostCategoriesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511868AD21CA5D6000CACE19 /* PostCategoriesStoryboard.storyboard */; };
+		511868B021CA5D7100CACE19 /* PostCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511868AF21CA5D7100CACE19 /* PostCategoriesViewController.swift */; };
+		511868B221CA61DD00CACE19 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511868B121CA61DD00CACE19 /* CategoryCell.swift */; };
+		76255F853220356090ED4DFA /* Pods_HandZap_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD26108A7007B94E181732E6 /* Pods_HandZap_AssignmentUITests.framework */; };
+		992CF2FE8769CA6742B5430E /* Pods_HandZap_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B3EB4B38482F98B23C3070 /* Pods_HandZap_Assignment.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5118680D21CA033400CACE19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 511867F021CA033200CACE19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 511867F721CA033200CACE19;
+			remoteInfo = HandZap_Assignment;
+		};
+		5118681821CA033400CACE19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 511867F021CA033200CACE19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 511867F721CA033200CACE19;
+			remoteInfo = HandZap_Assignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07098FB0AEB81E1E33CD6BA0 /* Pods_HandZap_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandZap_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5C015EE665C2ACFF32F27F /* Pods-HandZap_AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandZap_AssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandZap_AssignmentUITests/Pods-HandZap_AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		15E86CABF2AF712D6465BE7F /* Pods-HandZap_AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandZap_AssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandZap_AssignmentTests/Pods-HandZap_AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CB7DA74A6E99728D9A8209D /* Pods-HandZap_AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandZap_AssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandZap_AssignmentUITests/Pods-HandZap_AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		511867F821CA033200CACE19 /* HandZap_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandZap_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5118680721CA033400CACE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5118680C21CA033400CACE19 /* HandZap_AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandZap_AssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5118681021CA033400CACE19 /* HandZap_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandZap_AssignmentTests.swift; sourceTree = "<group>"; };
+		5118681221CA033400CACE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5118681721CA033400CACE19 /* HandZap_AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandZap_AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5118681B21CA033400CACE19 /* HandZap_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandZap_AssignmentUITests.swift; sourceTree = "<group>"; };
+		5118681D21CA033400CACE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5118682B21CA036500CACE19 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5118682D21CA036500CACE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5118682F21CA036500CACE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5118685121CA055100CACE19 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		5118685221CA055100CACE19 /* RootContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		5118686121CA05D500CACE19 /* NewPostInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostInteractor.swift; sourceTree = "<group>"; };
+		5118686321CA05D500CACE19 /* NewPostContractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostContractor.swift; sourceTree = "<group>"; };
+		5118686521CA05D500CACE19 /* NewPostPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostPresenter.swift; sourceTree = "<group>"; };
+		5118686721CA05D500CACE19 /* NewPostRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostRouter.swift; sourceTree = "<group>"; };
+		5118686921CA05D500CACE19 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		5118686A21CA05D500CACE19 /* NewPostStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewPostStoryboard.storyboard; sourceTree = "<group>"; };
+		5118687221CA06B800CACE19 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5118688121CA105300CACE19 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		5118688221CA105300CACE19 /* CustomTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		5118688621CA107D00CACE19 /* CustomTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextView.xib; sourceTree = "<group>"; };
+		5118688721CA107D00CACE19 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		5118688B21CA219100CACE19 /* CustomDataPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDataPicker.xib; sourceTree = "<group>"; };
+		5118688C21CA219100CACE19 /* CustomDataPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDataPicker.swift; sourceTree = "<group>"; };
+		5118688F21CA4CB400CACE19 /* AddAttachmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttachmentCell.swift; sourceTree = "<group>"; };
+		5118689121CA4CC000CACE19 /* AttachmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCell.swift; sourceTree = "<group>"; };
+		5118689521CA519500CACE19 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		5118689921CA5D0000CACE19 /* PostCategoriesContractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCategoriesContractor.swift; sourceTree = "<group>"; };
+		5118689B21CA5D0000CACE19 /* PostCategoriesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCategoriesPresenter.swift; sourceTree = "<group>"; };
+		511868A221CA5D0000CACE19 /* PostCategoriesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCategoriesInteractor.swift; sourceTree = "<group>"; };
+		511868A421CA5D0000CACE19 /* PostCategoriesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCategoriesRouter.swift; sourceTree = "<group>"; };
+		511868AD21CA5D6000CACE19 /* PostCategoriesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostCategoriesStoryboard.storyboard; sourceTree = "<group>"; };
+		511868AF21CA5D7100CACE19 /* PostCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCategoriesViewController.swift; sourceTree = "<group>"; };
+		511868B121CA61DD00CACE19 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		73B3EB4B38482F98B23C3070 /* Pods_HandZap_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandZap_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81E017BD83A09155342C488A /* Pods-HandZap_AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandZap_AssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandZap_AssignmentTests/Pods-HandZap_AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2285F9348EB391914A79FE8 /* Pods-HandZap_Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandZap_Assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandZap_Assignment/Pods-HandZap_Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		B887737B2702254008C6F702 /* Pods-HandZap_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandZap_Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandZap_Assignment/Pods-HandZap_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		CD26108A7007B94E181732E6 /* Pods_HandZap_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandZap_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		511867F521CA033200CACE19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992CF2FE8769CA6742B5430E /* Pods_HandZap_Assignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5118680921CA033400CACE19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA4E2669FBA23E135C6153F /* Pods_HandZap_AssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5118681421CA033400CACE19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76255F853220356090ED4DFA /* Pods_HandZap_AssignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		511867EF21CA033200CACE19 = {
+			isa = PBXGroup;
+			children = (
+				511867FA21CA033200CACE19 /* HandZap_Assignment */,
+				5118680F21CA033400CACE19 /* HandZap_AssignmentTests */,
+				5118681A21CA033400CACE19 /* HandZap_AssignmentUITests */,
+				511867F921CA033200CACE19 /* Products */,
+				F1A746E9240CBDAB15961EB1 /* Pods */,
+				E59F56050EBD9D9DE4E108D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		511867F921CA033200CACE19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				511867F821CA033200CACE19 /* HandZap_Assignment.app */,
+				5118680C21CA033400CACE19 /* HandZap_AssignmentTests.xctest */,
+				5118681721CA033400CACE19 /* HandZap_AssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		511867FA21CA033200CACE19 /* HandZap_Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				5118682A21CA036500CACE19 /* Application */,
+				5118689321CA518A00CACE19 /* Model */,
+				5118687121CA06B800CACE19 /* AppUtilities */,
+				5118682921CA036500CACE19 /* Module */,
+				5118682C21CA036500CACE19 /* Resources */,
+				5118680721CA033400CACE19 /* Info.plist */,
+			);
+			path = HandZap_Assignment;
+			sourceTree = "<group>";
+		};
+		5118680F21CA033400CACE19 /* HandZap_AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				5118681021CA033400CACE19 /* HandZap_AssignmentTests.swift */,
+				5118681221CA033400CACE19 /* Info.plist */,
+			);
+			path = HandZap_AssignmentTests;
+			sourceTree = "<group>";
+		};
+		5118681A21CA033400CACE19 /* HandZap_AssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5118681B21CA033400CACE19 /* HandZap_AssignmentUITests.swift */,
+				5118681D21CA033400CACE19 /* Info.plist */,
+			);
+			path = HandZap_AssignmentUITests;
+			sourceTree = "<group>";
+		};
+		5118682921CA036500CACE19 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5118689721CA5D0000CACE19 /* Post Categories */,
+				5118687A21CA0A4400CACE19 /* Common */,
+				5118685021CA055100CACE19 /* Root */,
+				5118683621CA038D00CACE19 /* New Post */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5118682A21CA036500CACE19 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5118682B21CA036500CACE19 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5118682C21CA036500CACE19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5118682D21CA036500CACE19 /* Assets.xcassets */,
+				5118682E21CA036500CACE19 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5118683621CA038D00CACE19 /* New Post */ = {
+			isa = PBXGroup;
+			children = (
+				5118686221CA05D500CACE19 /* Contract */,
+				5118686021CA05D500CACE19 /* Interactor */,
+				5118686421CA05D500CACE19 /* Presenter */,
+				5118686621CA05D500CACE19 /* Router */,
+				5118686821CA05D500CACE19 /* View */,
+			);
+			path = "New Post";
+			sourceTree = "<group>";
+		};
+		5118685021CA055100CACE19 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5118685121CA055100CACE19 /* RootRouter.swift */,
+				5118685221CA055100CACE19 /* RootContract.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5118686021CA05D500CACE19 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5118686121CA05D500CACE19 /* NewPostInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5118686221CA05D500CACE19 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				5118686321CA05D500CACE19 /* NewPostContractor.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		5118686421CA05D500CACE19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5118686521CA05D500CACE19 /* NewPostPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5118686621CA05D500CACE19 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5118686721CA05D500CACE19 /* NewPostRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5118686821CA05D500CACE19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5118686921CA05D500CACE19 /* NewPostViewController.swift */,
+				5118686A21CA05D500CACE19 /* NewPostStoryboard.storyboard */,
+				5118688F21CA4CB400CACE19 /* AddAttachmentCell.swift */,
+				5118689121CA4CC000CACE19 /* AttachmentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5118687121CA06B800CACE19 /* AppUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5118687221CA06B800CACE19 /* Constants.swift */,
+			);
+			path = AppUtilities;
+			sourceTree = "<group>";
+		};
+		5118687A21CA0A4400CACE19 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5118688A21CA219100CACE19 /* Custom Data Picker */,
+				5118688021CA105300CACE19 /* Custom Text Field */,
+				5118688321CA105300CACE19 /* Custom Text View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5118688021CA105300CACE19 /* Custom Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				5118688121CA105300CACE19 /* CustomTextField.swift */,
+				5118688221CA105300CACE19 /* CustomTextField.xib */,
+			);
+			path = "Custom Text Field";
+			sourceTree = "<group>";
+		};
+		5118688321CA105300CACE19 /* Custom Text View */ = {
+			isa = PBXGroup;
+			children = (
+				5118688721CA107D00CACE19 /* CustomTextView.swift */,
+				5118688621CA107D00CACE19 /* CustomTextView.xib */,
+			);
+			path = "Custom Text View";
+			sourceTree = "<group>";
+		};
+		5118688A21CA219100CACE19 /* Custom Data Picker */ = {
+			isa = PBXGroup;
+			children = (
+				5118688B21CA219100CACE19 /* CustomDataPicker.xib */,
+				5118688C21CA219100CACE19 /* CustomDataPicker.swift */,
+			);
+			path = "Custom Data Picker";
+			sourceTree = "<group>";
+		};
+		5118689321CA518A00CACE19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5118689421CA518A00CACE19 /* Local Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5118689421CA518A00CACE19 /* Local Data */ = {
+			isa = PBXGroup;
+			children = (
+				5118689521CA519500CACE19 /* UserData.swift */,
+			);
+			path = "Local Data";
+			sourceTree = "<group>";
+		};
+		5118689721CA5D0000CACE19 /* Post Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5118689821CA5D0000CACE19 /* Contract */,
+				5118689A21CA5D0000CACE19 /* Presenter */,
+				5118689C21CA5D0000CACE19 /* View */,
+				511868A121CA5D0000CACE19 /* Interactor */,
+				511868A321CA5D0000CACE19 /* Router */,
+			);
+			path = "Post Categories";
+			sourceTree = "<group>";
+		};
+		5118689821CA5D0000CACE19 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				5118689921CA5D0000CACE19 /* PostCategoriesContractor.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		5118689A21CA5D0000CACE19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5118689B21CA5D0000CACE19 /* PostCategoriesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5118689C21CA5D0000CACE19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				511868AD21CA5D6000CACE19 /* PostCategoriesStoryboard.storyboard */,
+				511868AF21CA5D7100CACE19 /* PostCategoriesViewController.swift */,
+				511868B121CA61DD00CACE19 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		511868A121CA5D0000CACE19 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				511868A221CA5D0000CACE19 /* PostCategoriesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		511868A321CA5D0000CACE19 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				511868A421CA5D0000CACE19 /* PostCategoriesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E59F56050EBD9D9DE4E108D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73B3EB4B38482F98B23C3070 /* Pods_HandZap_Assignment.framework */,
+				07098FB0AEB81E1E33CD6BA0 /* Pods_HandZap_AssignmentTests.framework */,
+				CD26108A7007B94E181732E6 /* Pods_HandZap_AssignmentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1A746E9240CBDAB15961EB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B887737B2702254008C6F702 /* Pods-HandZap_Assignment.debug.xcconfig */,
+				B2285F9348EB391914A79FE8 /* Pods-HandZap_Assignment.release.xcconfig */,
+				81E017BD83A09155342C488A /* Pods-HandZap_AssignmentTests.debug.xcconfig */,
+				15E86CABF2AF712D6465BE7F /* Pods-HandZap_AssignmentTests.release.xcconfig */,
+				0E5C015EE665C2ACFF32F27F /* Pods-HandZap_AssignmentUITests.debug.xcconfig */,
+				3CB7DA74A6E99728D9A8209D /* Pods-HandZap_AssignmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		511867F721CA033200CACE19 /* HandZap_Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5118682021CA033400CACE19 /* Build configuration list for PBXNativeTarget "HandZap_Assignment" */;
+			buildPhases = (
+				C60F7701E878F1CEEDBE6809 /* [CP] Check Pods Manifest.lock */,
+				511867F421CA033200CACE19 /* Sources */,
+				511867F521CA033200CACE19 /* Frameworks */,
+				511867F621CA033200CACE19 /* Resources */,
+				035B131A6A30B8D0B941D832 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandZap_Assignment;
+			productName = HandZap_Assignment;
+			productReference = 511867F821CA033200CACE19 /* HandZap_Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5118680B21CA033400CACE19 /* HandZap_AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5118682321CA033400CACE19 /* Build configuration list for PBXNativeTarget "HandZap_AssignmentTests" */;
+			buildPhases = (
+				F95EEDCD2DF129F398826B31 /* [CP] Check Pods Manifest.lock */,
+				5118680821CA033400CACE19 /* Sources */,
+				5118680921CA033400CACE19 /* Frameworks */,
+				5118680A21CA033400CACE19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5118680E21CA033400CACE19 /* PBXTargetDependency */,
+			);
+			name = HandZap_AssignmentTests;
+			productName = HandZap_AssignmentTests;
+			productReference = 5118680C21CA033400CACE19 /* HandZap_AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5118681621CA033400CACE19 /* HandZap_AssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5118682621CA033400CACE19 /* Build configuration list for PBXNativeTarget "HandZap_AssignmentUITests" */;
+			buildPhases = (
+				C7D2A0B3BF4E4473C10EB038 /* [CP] Check Pods Manifest.lock */,
+				5118681321CA033400CACE19 /* Sources */,
+				5118681421CA033400CACE19 /* Frameworks */,
+				5118681521CA033400CACE19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5118681921CA033400CACE19 /* PBXTargetDependency */,
+			);
+			name = HandZap_AssignmentUITests;
+			productName = HandZap_AssignmentUITests;
+			productReference = 5118681721CA033400CACE19 /* HandZap_AssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		511867F021CA033200CACE19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Durgesh Pandey";
+				TargetAttributes = {
+					511867F721CA033200CACE19 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5118680B21CA033400CACE19 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 511867F721CA033200CACE19;
+					};
+					5118681621CA033400CACE19 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 511867F721CA033200CACE19;
+					};
+				};
+			};
+			buildConfigurationList = 511867F321CA033200CACE19 /* Build configuration list for PBXProject "HandZap_Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 511867EF21CA033200CACE19;
+			productRefGroup = 511867F921CA033200CACE19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				511867F721CA033200CACE19 /* HandZap_Assignment */,
+				5118680B21CA033400CACE19 /* HandZap_AssignmentTests */,
+				5118681621CA033400CACE19 /* HandZap_AssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		511867F621CA033200CACE19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5118688521CA105300CACE19 /* CustomTextField.xib in Resources */,
+				5118683321CA036500CACE19 /* Assets.xcassets in Resources */,
+				5118687021CA05D500CACE19 /* NewPostStoryboard.storyboard in Resources */,
+				5118688821CA107D00CACE19 /* CustomTextView.xib in Resources */,
+				511868AE21CA5D6000CACE19 /* PostCategoriesStoryboard.storyboard in Resources */,
+				5118688D21CA219100CACE19 /* CustomDataPicker.xib in Resources */,
+				5118683421CA036500CACE19 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5118680A21CA033400CACE19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5118681521CA033400CACE19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		035B131A6A30B8D0B941D832 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HandZap_Assignment/Pods-HandZap_Assignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandZap_Assignment/Pods-HandZap_Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C60F7701E878F1CEEDBE6809 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandZap_Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D2A0B3BF4E4473C10EB038 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandZap_AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F95EEDCD2DF129F398826B31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandZap_AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		511867F421CA033200CACE19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5118686C21CA05D500CACE19 /* NewPostContractor.swift in Sources */,
+				511868A521CA5D0000CACE19 /* PostCategoriesContractor.swift in Sources */,
+				5118688421CA105300CACE19 /* CustomTextField.swift in Sources */,
+				5118688921CA107D00CACE19 /* CustomTextView.swift in Sources */,
+				511868B021CA5D7100CACE19 /* PostCategoriesViewController.swift in Sources */,
+				511868AB21CA5D0000CACE19 /* PostCategoriesInteractor.swift in Sources */,
+				5118689621CA519500CACE19 /* UserData.swift in Sources */,
+				5118683221CA036500CACE19 /* AppDelegate.swift in Sources */,
+				5118686E21CA05D500CACE19 /* NewPostRouter.swift in Sources */,
+				511868AC21CA5D0000CACE19 /* PostCategoriesRouter.swift in Sources */,
+				511868A621CA5D0000CACE19 /* PostCategoriesPresenter.swift in Sources */,
+				5118685321CA055100CACE19 /* RootRouter.swift in Sources */,
+				5118689021CA4CB400CACE19 /* AddAttachmentCell.swift in Sources */,
+				5118686D21CA05D500CACE19 /* NewPostPresenter.swift in Sources */,
+				5118686F21CA05D500CACE19 /* NewPostViewController.swift in Sources */,
+				5118688E21CA219100CACE19 /* CustomDataPicker.swift in Sources */,
+				5118685421CA055100CACE19 /* RootContract.swift in Sources */,
+				511868B221CA61DD00CACE19 /* CategoryCell.swift in Sources */,
+				5118686B21CA05D500CACE19 /* NewPostInteractor.swift in Sources */,
+				5118689221CA4CC000CACE19 /* AttachmentCell.swift in Sources */,
+				5118687421CA06B800CACE19 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5118680821CA033400CACE19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5118681121CA033400CACE19 /* HandZap_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5118681321CA033400CACE19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5118681C21CA033400CACE19 /* HandZap_AssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5118680E21CA033400CACE19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 511867F721CA033200CACE19 /* HandZap_Assignment */;
+			targetProxy = 5118680D21CA033400CACE19 /* PBXContainerItemProxy */;
+		};
+		5118681921CA033400CACE19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 511867F721CA033200CACE19 /* HandZap_Assignment */;
+			targetProxy = 5118681821CA033400CACE19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5118682E21CA036500CACE19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5118682F21CA036500CACE19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5118681E21CA033400CACE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5118681F21CA033400CACE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5118682121CA033400CACE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B887737B2702254008C6F702 /* Pods-HandZap_Assignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZX38FJ78H;
+				INFOPLIST_FILE = HandZap_Assignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Globant.HandZap-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5118682221CA033400CACE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2285F9348EB391914A79FE8 /* Pods-HandZap_Assignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZX38FJ78H;
+				INFOPLIST_FILE = HandZap_Assignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Globant.HandZap-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5118682421CA033400CACE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E017BD83A09155342C488A /* Pods-HandZap_AssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZX38FJ78H;
+				INFOPLIST_FILE = HandZap_AssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Globant.HandZap-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandZap_Assignment.app/HandZap_Assignment";
+			};
+			name = Debug;
+		};
+		5118682521CA033400CACE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E86CABF2AF712D6465BE7F /* Pods-HandZap_AssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZX38FJ78H;
+				INFOPLIST_FILE = HandZap_AssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Globant.HandZap-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandZap_Assignment.app/HandZap_Assignment";
+			};
+			name = Release;
+		};
+		5118682721CA033400CACE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5C015EE665C2ACFF32F27F /* Pods-HandZap_AssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZX38FJ78H;
+				INFOPLIST_FILE = HandZap_AssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Globant.HandZap-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandZap_Assignment;
+			};
+			name = Debug;
+		};
+		5118682821CA033400CACE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB7DA74A6E99728D9A8209D /* Pods-HandZap_AssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZX38FJ78H;
+				INFOPLIST_FILE = HandZap_AssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Globant.HandZap-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandZap_Assignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		511867F321CA033200CACE19 /* Build configuration list for PBXProject "HandZap_Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5118681E21CA033400CACE19 /* Debug */,
+				5118681F21CA033400CACE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5118682021CA033400CACE19 /* Build configuration list for PBXNativeTarget "HandZap_Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5118682121CA033400CACE19 /* Debug */,
+				5118682221CA033400CACE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5118682321CA033400CACE19 /* Build configuration list for PBXNativeTarget "HandZap_AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5118682421CA033400CACE19 /* Debug */,
+				5118682521CA033400CACE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5118682621CA033400CACE19 /* Build configuration list for PBXNativeTarget "HandZap_AssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5118682721CA033400CACE19 /* Debug */,
+				5118682821CA033400CACE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 511867F021CA033200CACE19 /* Project object */;
+}

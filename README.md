@@ -7,6 +7,10 @@
 # Design Pattern
 VIPER Design Pattern Used
 
+# Depenencies
+Cocoapods
+IQKeyboardManagerSwift for Managing Keyboard show and Hide with ScrollView
+
 Created Reusable components for each type of Input Fields which is very conveient to use and customize.
 
 
